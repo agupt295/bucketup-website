@@ -1,5 +1,5 @@
-import AppPreview from "@/components/AppPreview";
 import AppStoreBadge from "@/components/AppStoreBadge";
+import FrontImage from "@/components/FrontImage";
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center">
-        <AppPreview />
+        <FrontImage />
       </div>
     </section>
   );
