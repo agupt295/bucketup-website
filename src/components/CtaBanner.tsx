@@ -3,7 +3,7 @@ import AppStoreBadge from "@/components/AppStoreBadge";
 export default function CtaBanner() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-24">
-      <div className="flex flex-col items-center gap-6 rounded-3xl bg-gradient-to-br from-zinc-900 to-zinc-950 px-8 py-14 text-center">
+      <div className="flex flex-col items-center gap-6 rounded-3xl bg-gradient-to-br from-zinc-900 to-zinc-950 px-8 py-14 text-center ring-1 ring-white/10">
         <h2 className="max-w-lg text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">
           Your next trip is one plan away.
         </h2>
