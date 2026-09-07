@@ -1,5 +1,5 @@
 import Image from "next/image";
-import frontImg from "@/images/front-img.svg";
+import frontImg from "@/images/front_img.png";
 
 export default function FrontImage() {
   return (
