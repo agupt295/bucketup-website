@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bucketus",
-  description: "Bucketus",
+  title: "Bucketus — Plan your dream trips",
+  description:
+    "Plan trips, invite friends, and manage expenses together with Bucketus.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
