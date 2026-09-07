@@ -1,10 +1,19 @@
+import CtaBanner from "@/components/CtaBanner";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center gap-2 p-16 text-center">
-      <h1 className="text-3xl font-semibold tracking-tight">Bucketus</h1>
-      <p className="text-zinc-500 dark:text-zinc-400">
-        Project scaffolding is ready. Build starts here.
-      </p>
-    </main>
+    <>
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        <Features />
+        <CtaBanner />
+      </main>
+      <Footer />
+    </>
   );
 }
