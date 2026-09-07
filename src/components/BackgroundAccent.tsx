@@ -1,15 +1,19 @@
 import backgroundImg from "@/images/background.jpg";
 
 export default function BackgroundAccent() {
+  const fade =
+    "radial-gradient(circle at 100% 100%, black 25%, transparent 100%)";
+
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute right-0 bottom-0 -z-10 h-[2400px] w-[min(984px,90vw)]"
+      className="pointer-events-none absolute right-0 bottom-0 -z-10 w-[min(1500px,94vw)]"
       style={{
-        backgroundImage: `radial-gradient(circle at 100% 100%, transparent 20%, var(--background) 75%), url(${backgroundImg.src})`,
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundPosition: "bottom right, bottom right",
-        backgroundSize: "100% 100%, 100% auto",
+        aspectRatio: "711 / 350",
+        backgroundImage: `url(${backgroundImg.src})`,
+        backgroundSize: "100% 100%",
+        WebkitMaskImage: fade,
+        maskImage: fade,
       }}
     />
   );
