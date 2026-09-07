@@ -31,10 +31,10 @@ export default function Features() {
   return (
     <section id="features" className="mx-auto max-w-6xl px-6 pt-8 pb-20 sm:pb-28">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl dark:text-white">
+        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           Everything your trip needs
         </h2>
-        <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="mt-4 text-lg text-zinc-400">
           From the first idea to the final split — Bucketus covers the whole trip.
         </p>
       </div>
@@ -42,15 +42,15 @@ export default function Features() {
         {features.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
-            className="rounded-2xl bg-zinc-50 p-6 ring-1 ring-black/5 dark:bg-white/5 dark:ring-white/10"
+            className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-indigo-500/10 text-indigo-500">
               <Icon className="h-5 w-5" strokeWidth={2} />
             </span>
-            <h3 className="mt-4 text-base font-semibold text-zinc-950 dark:text-white">
+            <h3 className="mt-4 text-base font-semibold text-white">
               {title}
             </h3>
-            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{description}</p>
+            <p className="mt-2 text-sm text-zinc-400">{description}</p>
           </div>
         ))}
       </div>
