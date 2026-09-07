@@ -2,7 +2,7 @@ import backgroundImg from "@/images/background.jpg";
 
 export default function BackgroundAccent() {
   const fade =
-    "radial-gradient(circle at 100% 100%, black 25%, transparent 100%)";
+    "radial-gradient(ellipse farthest-side at 100% 100%, black 25%, transparent 100%)";
 
   return (
     <div
